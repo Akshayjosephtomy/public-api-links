@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ApidataComponent } from './apidata/apidata.component';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 
   const link:Routes=[
@@ -23,7 +24,8 @@ import { RouterModule, Routes } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(link)
+    RouterModule.forRoot(link),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
